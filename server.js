@@ -19,6 +19,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/project', (req, res) => {
+  res.render('project.hbs', {
+  title: 'Project Page',
+  text: 'Project page text here'  
+  });
+});
+
 app.listen(port, () => {
   console.log(`Current port running is ${port}`);
 });
